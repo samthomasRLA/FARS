@@ -1,0 +1,19 @@
+Package: FARS
+Type: Package
+Title: Facilitates Analysis of FARS Data
+Version: 1.0.0
+Date: 2018-03-22
+Depends: R (>= 3.0.0)
+Author: Sam Thomas <samuel.thomas12@gmail.com>
+Maintainer: Sam Thomas <samuel.thomas12@gmail.com>
+Description: The FARS package contains a set of useful functions to facilitate
+    analysis of data from the U.S. Department of Transportaion Fatality Analysis Reporting
+    System. The package allows users to easily load data, filter data by year, 
+    and count and map fataility events by year, month, and U.S. state
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr

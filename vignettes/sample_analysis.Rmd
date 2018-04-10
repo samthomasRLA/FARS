@@ -1,0 +1,29 @@
+---
+title: "Sample Analysis"
+author: "Sam Thomas"
+date: "2018-03-22"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Sample Analysis for FARS}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Example: plotting events
+
+You can plot all events in a given year on a map and identify the state with the lowest apparent density of incidents.
+
+```{plotting_example}
+## use fars_map_state and provide a year and range of state ID#s
+
+fars_map_state(1:50, 2013)
+
+#Wyoming
+```
