@@ -111,7 +111,7 @@ fars_summarize_years <- function(years) {
 #' 
 #' @return Returns map plot of one or more US states with black dots representing FARS events in the selected year
 #'  
-#' @importFrom dplyr filter %in%
+#' @importFrom dplyr filter
 #' @importFrom maps map
 #' @importFrom graphics points
 #' 
