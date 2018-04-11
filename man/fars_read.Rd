@@ -6,6 +6,9 @@
 \usage{
 fars_read(filename)
 }
+\arguments{
+\item{filename}{A character string indicating the name of the file to be read}
+}
 \value{
 This function returns a dataframe of the FARS data.
 }
@@ -17,7 +20,7 @@ into R. It takes a filename as an argument.
 The function suppressess messages generated during the data read process and throws an error if the \code{filename} does not exist in the working directory.
 }
 \examples{
-fars_read("accident_2013.csv.bz2")
+fars_read(system.file("extdata", "accident_2013.csv.bz2", package = "FARS"))
 \dontrun{fars_read("does_not_exist.csv")}
 
 }

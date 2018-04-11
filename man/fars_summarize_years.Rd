@@ -20,7 +20,7 @@ This function summarizes the number of incidents by month and year in FARS data 
 the function will throw an error if the \code{year} supplied is not found in the dataset(s) or is not a number
 }
 \examples{
-fars_summarize_years(2013:2015)
+\dontrun{fars_summarize_years(2013:2015)}
 \dontrun{fars_summarize_years(not_a_number)}
 
 }

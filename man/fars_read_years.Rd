@@ -19,7 +19,7 @@ Reads FARS data for selected years and generates separate lists for each year wi
 Throws an error if the \code{year} is not a number or not a year found in the file(s)
 }
 \examples{
-fars_read_years(2013:2015)
+\dontrun{fars_read_years(2013:2015)}
 \dontrun{fars_read_years(not_a_number)}
 
 }

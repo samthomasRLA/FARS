@@ -1,3 +1,5 @@
+if(getRversion() >= "2.15.1") utils::globalVariables(c("year", "MONTH", "n", "STATE"))
+
 #' Read FARS data
 #' 
 #' This function reads data from the US National Highway Traffic Safety Administration's Fatality Analysis Reporting System 
@@ -5,7 +7,7 @@
 #' 
 #' @note The function suppressess messages generated during the data read process and throws an error if the \code{filename} does not exist in the working directory.
 #' 
-#' @parm filename A character string indicating the name of the file to be read
+#' @param filename A character string indicating the name of the file to be read
 #' 
 #' @return This function returns a dataframe of the FARS data.
 #' 
@@ -13,7 +15,7 @@
 #' @importFrom dplyr tbl_df
 #' 
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
+#' fars_read(system.file("extdata", "accident_2013.csv.bz2", package = "FARS"))
 #' \dontrun{fars_read("does_not_exist.csv")}
 #' 
 #' @export
@@ -55,7 +57,7 @@ make_filename <- function(year) {
 #' @importFrom dplyr mutate select %>%
 #' 
 #' @examples
-#' fars_read_years(2013:2015)
+#' \dontrun{fars_read_years(2013:2015)}
 #' \dontrun{fars_read_years(not_a_number)}
 #' 
 #' @export
@@ -85,7 +87,7 @@ fars_read_years <- function(years) {
 #' @importFrom tidyr spread
 #' 
 #' @examples
-#' fars_summarize_years(2013:2015)
+#' \dontrun{fars_summarize_years(2013:2015)}
 #' \dontrun{fars_summarize_years(not_a_number)}
 #' 
 #' @export
@@ -116,8 +118,8 @@ fars_summarize_years <- function(years) {
 #' @importFrom graphics points
 #' 
 #' @examples
-#' fars_map_state(1, 2013)
-#' fars_map_state(1:50, 2013)
+#' \dontrun{fars_map_state(1, 2013)}
+#' \dontrun{fars_map_state(1:50, 2013)}
 #' \dontrun{fars_map_state(75, 2013)}
 #' 
 #' @export

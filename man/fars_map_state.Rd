@@ -29,8 +29,8 @@ More than one state may be selected at a time, generating a country-wide map wit
 If a valid subset of data is selected, but not FARS events are avaialble, the function will print a message indicating that
 }
 \examples{
-fars_map_state(1, 2013)
-fars_map_state(1:50, 2013)
+\dontrun{fars_map_state(1, 2013)}
+\dontrun{fars_map_state(1:50, 2013)}
 \dontrun{fars_map_state(75, 2013)}
 
 }
