@@ -31,4 +31,5 @@ For example, you can summarize the data for all events by month and year:
   head(summary_output)
 
 ```
-This package has been built and checked on Travis https://travis-ci.org/samthomasRLA/FARS.svg?branch=master
+This package has been built and checked on Travis
+[![Build Status](https://travis-ci.org/samthomasRLA/FARS.svg?branch=master)](https://travis-ci.org/samthomasRLA/FARS)
