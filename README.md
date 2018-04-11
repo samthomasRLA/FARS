@@ -17,3 +17,5 @@ For example, you can summarize the data for all events by month and year:
   summary_output <- fars_read_years(2013:2015)
   head(summary_output)
 ```
+
+This package has been built and checked on Travis <https://travis-ci.org/samthomasRLA/FARS.svg?branch=master>
