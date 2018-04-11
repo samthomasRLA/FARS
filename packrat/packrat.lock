@@ -29,11 +29,21 @@ Source: CRAN
 Version: 0.1-3
 Hash: c590d29e555926af053055e23ee79efb
 
+Package: brew
+Source: CRAN
+Version: 1.0-6
+Hash: 931f9972deae0f205e1c78a51f33149b
+
 Package: cli
 Source: CRAN
 Version: 1.0.0
 Hash: f4239f89feb7ddc65821e4514e9734ae
 Requires: assertthat, crayon
+
+Package: commonmark
+Source: CRAN
+Version: 1.4
+Hash: 91d7807331a4a37ef8376fb073960ee4
 
 Package: crayon
 Source: CRAN
@@ -44,6 +54,12 @@ Package: curl
 Source: CRAN
 Version: 3.2
 Hash: e3318ec2d42d15a38485bab047d114ba
+
+Package: desc
+Source: CRAN
+Version: 1.1.1
+Hash: 2f99e95211c4ba6efcf5538d096587fc
+Requires: R6, assertthat, crayon, rprojroot
 
 Package: devtools
 Source: CRAN
@@ -150,6 +166,13 @@ Hash: ab7f84e6f41ed8d8e8b9a2031cf631f8
 Requires: base64enc, evaluate, htmltools, jsonlite, knitr, mime,
     rprojroot, stringr, yaml
 
+Package: roxygen2
+Source: CRAN
+Version: 6.0.1
+Hash: 4436b7a0351046d4144ad6587081a660
+Requires: R6, Rcpp, brew, commonmark, desc, digest, stringi, stringr,
+    xml2
+
 Package: rprojroot
 Source: CRAN
 Version: 1.3-2
@@ -187,6 +210,12 @@ Package: withr
 Source: CRAN
 Version: 2.1.2
 Hash: d534108bcd5f34ec73e9eb523751ba20
+
+Package: xml2
+Source: CRAN
+Version: 1.2.0
+Hash: 94e9b541116e27d80a23d436f81eda80
+Requires: Rcpp
 
 Package: yaml
 Source: CRAN

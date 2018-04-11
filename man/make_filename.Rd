@@ -2,7 +2,7 @@
 % Please edit documentation in R/fars_functions.R
 \name{make_filename}
 \alias{make_filename}
-\title{Makes a filename by concatenating "accident_%d.csv.bz2" and a user-supplied year, where %d becomes the year.}
+\title{Makes a filename by concatenating "accident_\%d.csv.bz2" and a user-supplied year, where \%d becomes the year.}
 \usage{
 make_filename(year)
 }
@@ -13,7 +13,7 @@ make_filename(year)
 returns the complete file name
 }
 \description{
-Makes a filename by concatenating "accident_%d.csv.bz2" and a user-supplied year, where %d becomes the year.
+Makes a filename by concatenating "accident_\%d.csv.bz2" and a user-supplied year, where \%d becomes the year.
 }
 \note{
 If \code{year} cannot be coerced into an integer, the function will throw an error

@@ -21,12 +21,12 @@ fars_read <- function(filename) {
   if(!file.exists(filename))
     stop("file '", filename, "' does not exist")
   data <- suppressMessages({
-    readr::read_csv(filename, progress = FALSE)
+    readr::read_csv(filename, progress = FALSE, quote = "")
   })
   dplyr::tbl_df(data)
 }
 
-#' Makes a filename by concatenating "accident_%d.csv.bz2" and a user-supplied year, where %d becomes the year.
+#' Makes a filename by concatenating "accident_\%d.csv.bz2" and a user-supplied year, where \%d becomes the year.
 #' 
 #' @param year An integer representing the year that will be inserted into the file name
 #' 
